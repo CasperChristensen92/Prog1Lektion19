@@ -10,6 +10,9 @@ public class Swimmer {
     private String club;
     private int yearGroup;
     private ArrayList<Double> lapTimes;
+    private Random random = new Random();
+    private double talent = random.nextGaussian(100,20);
+    private TrainingPlan trainingPlan;
     
     /**
      * Initialize a new swimmer with name, club, yearGroup, and lap times.
@@ -49,7 +52,15 @@ public class Swimmer {
     public void setClub(String club) {
         this.club = club;
     }
-    
+
+    public void setTrainingPlan(TrainingPlan trainingPlan) {
+        this.trainingPlan = trainingPlan;
+    }
+
+    public TrainingPlan getTrainingPlan() {
+        return trainingPlan;
+    }
+
     /**
      * Return the fastest lap time
      */
@@ -61,5 +72,9 @@ public class Swimmer {
         	}
         }
         return best;
+    }
+
+    public int allTrainingHours(){
+        return trainingPlan.getWeeklyStrengthHours()+trainingPlan.getWeeklyWaterHours();
     }
 }
