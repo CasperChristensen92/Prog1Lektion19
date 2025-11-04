@@ -10,8 +10,6 @@ public class Swimmer {
     private String club;
     private int yearGroup;
     private ArrayList<Double> lapTimes;
-    private Random random = new Random();
-    private double talent = random.nextGaussian(100,20);
     private TrainingPlan trainingPlan;
     
     /**

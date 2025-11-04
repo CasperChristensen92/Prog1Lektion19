@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 //Hvad betyder det at multipliciteten er 0..* i begge retninger?
 //Når der er multiplicitet 0..* i begge ender betyder det at der er en mange til mange relation
-//I dette tilfælde er
+//I dette tilfælde er pilen fra rental Rental mod Car så et rental objekt kan indeholde mange biler.
+//Der er også en mange relation den anden vej så bilerne er ikke låst til kun én udlegning
 public class Rental {
     int number;
     int days;

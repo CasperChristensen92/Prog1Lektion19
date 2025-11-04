@@ -39,6 +39,8 @@ public class SwimmerApp {
         lapTimes.add(1.03);
         Swimmer swimmerMikkel = new Swimmer("Mikkel", 1993, lapTimes, "AIA-Tranbjerg");
 
+
+
         ArrayList<Swimmer> swimmers = new ArrayList<>();
         swimmers.add(swimmerJan);
         swimmers.add(swimmerBo);
@@ -47,6 +49,7 @@ public class SwimmerApp {
         for (Swimmer s : swimmers) {
             System.out.println(s.getName() + "'s bedste tid: " + s.bestLapTime() + "\n");
         }
+
 
         TrainingPlan trainingPlanA = new TrainingPlan('A', 16, 10);
         TrainingPlan trainingPlanB = new TrainingPlan('B', 10, 6);
